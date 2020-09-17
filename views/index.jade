@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 Riot API Stuff
+  form
+    label(for='name') Summoner Name
+    input(name='name' type='text' id='name')
+
+    button(id='submit-btn' type='submit' click='getMatches(event)') Get Matches
+
+  table
+    thead
+      tr
+        th Champion ID
+        th Lane
+        th Role
+
+    tbody(id='tbody')
+      
